@@ -7,7 +7,7 @@
   padding: 32px 16px 16px;
   background-color: #fff;
 
-  transition: all 300ms;
+  transition: 300ms;
 
   &:hover {
     transform: scale(1.2);
@@ -25,9 +25,12 @@
     color: $main-text-color;
     line-height: 18px;
     margin: 0 0 4px;
-    &:hover {
-      color: #34568b;
-    }
+
+    transition: color 300ms;
+  }
+
+  &:hover &__name {
+    color: #34568b;
   }
 
   &__code {
@@ -84,6 +87,8 @@
     text-decoration: none;
     text-transform: uppercase;
     background-color: $blue-color;
+
+    transition: background-color 2s, color 2s;
   }
 
   &__buy-link:hover {
